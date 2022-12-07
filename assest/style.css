@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px;
+    line-height: 1.;
+    padding: 0;
+    margin: 0;
+    background-color: #7a8283;
+    width: 100%;
+}
+
+/*Global*/
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.section-title {
+    padding: 0px 20px 0 20px;
+    border-radius: 15px;
+    margin: 2% 80% 5% 5%;
+    background: #2d3235;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    text-align: center;
+    font-size: 34px;
+    color:seashell
+}
+
+.zoom:hover {
+    transform: scale(1.2);
+}
+
+/*Header*/
+header {
+    background:#2d3235;
+    color: rgb(78, 190, 218);
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(78, 190, 218) 3px solid;
+}
+header a {
+    color: rgb(78, 190, 218);
+    text-decoration: none;
+    text-transform:capitalize;
+    font-size: 16px;
+}
+
+a:hover {
+    color: seashell;
+    text-decoration: underline;
+}
+
+/*Removal of bullets*/
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #name {
+    float: left;
+}
+
+header #name h1 {
+    margin: 0;
+}
+
+/*Make horizontal*/
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .current a {
+    font-weight: bold;
+}
+
+/*Showcase*/
+#showcase {
+    min-height: 400px;
+    max-width: 100%;
+    background: url("../assets/img/data-universe.png") no-repeat 0 -300px;
+    text-align: center;
+    color: seashell;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p {
+    font-size: 20px;
+    border-radius: 15px;
+    background: #7a8283;
+
+}
+
+/*Projects*/
+#projects .card {
+    float: left; 
+    text-align: center;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 30%;
+    padding: 20px;
+}
+
+#projects a {
+    text-decoration: none;
+    color: black;
+}
+
+#projects a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#projects .card img {
+    width: 90px;
+}
+
+/*About Me Page*/
+#about-me {
+    float: left;
+    width: 65%;
+    padding: 15px 15px 30px 15px;
+    background-color: #2d3235;
+    color: seashell;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#about-me .text-heading {
+    font-size: 34px;
+
+}
+#aside img#profile {
+    float: right;
+    width: 30%;
+    height: 30%;
+}
+
+/*Contact Information*/
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color:rgb(78, 190, 218);
+    text-align: center;
+}
+
+footer li{
+    float: center;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+footer a {
+    color: rgb(78, 190, 218);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/*Media Queries*/
+@media(max-width: 768px) {
+    header #name,
+    header nav,
+    #projects .card
+    #about-me,
+    #aside img#profile{
+        float: none;
+        text-align: center;
+        display: block;
+        min-width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #aside img#profile{
+        margin-top: 10px;
+    }
+
+    header nav li,
+    header #name,
+    footer li{
+        display: block;
+        text-align: center;
+    }
+
+}
